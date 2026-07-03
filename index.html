@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Heroes Password Generator</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<div class="background">
+
+<div class="circle circle1"></div>
+
+<div class="circle circle2"></div>
+
+<div class="circle circle3"></div>
+
+</div>
+
+<main class="container">
+<div class="brand">DIGITAL HEROES</div>
+
+<h1>Secure Password Generator</h1>
+
+<p class="subtitle">
+    Built for the Digital Heroes Developer Trial
+</p>
+
+<div class="generator">
+
+<div class="password-box">
+
+    <input
+        type="password"
+        id="password"
+        readonly
+        placeholder="Click Generate Password">
+
+    <button
+        id="togglePassword"
+        class="icon-btn"
+        aria-label="Toggle Password Visibility">
+
+        <svg
+            id="eyeIcon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+
+            <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/>
+            <circle cx="12" cy="12" r="3"/>
+
+        </svg>
+
+    </button>
+
+    <button id="copyBtn">
+        Copy
+    </button>
+
+</div> 
+
+<div class="length-section">
+
+    <div class="length-header">
+        <span>Password Length</span>
+        <span id="lengthValue">12</span>
+    </div>
+
+    <input
+        type="range"
+        id="lengthSlider"
+        min="6"
+        max="32"
+        value="12">
+
+</div>
+
+
+
+<div class="options">
+
+<label>
+
+<input
+
+type="checkbox"
+
+id="uppercase"
+
+checked>
+
+Include Uppercase
+
+</label>
+
+<label>
+
+<input
+
+type="checkbox"
+
+id="lowercase"
+
+checked>
+
+Include Lowercase
+
+</label>
+
+<label>
+
+<input
+
+type="checkbox"
+
+id="numbers"
+
+checked>
+
+Include Numbers
+
+</label>
+
+<label>
+
+<input
+
+type="checkbox"
+
+id="symbols"
+
+checked>
+
+Include Symbols
+
+</label>
+
+<label>
+
+<input
+
+type="checkbox"
+
+id="similar">
+
+Exclude Similar Characters
+
+</label>
+
+</div>
+
+<div class="strength">
+
+<div class="strength-text">
+
+Password Strength
+
+</div>
+
+<div class="strength-bar">
+
+<div id="strengthIndicator"></div>
+
+</div>
+
+<div id="strengthLabel">
+
+Weak
+
+</div>
+
+</div>
+
+<button id="generateBtn">
+
+Generate Password
+
+</button>
+
+<p id="toast">
+
+Password Copied!
+
+</p>
+
+</div>
+
+<footer>
+    Built by <strong>Soham Kale</strong> | Digital Heroes Project
+</footer> 
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html> 

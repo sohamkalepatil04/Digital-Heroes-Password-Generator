@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:#fff;
+    overflow:hidden;
+}
+
+/* Background */
+.background{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+}
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(90px);
+    opacity:.7;
+    animation:float 10s infinite ease-in-out;
+}
+
+.circle1{width:280px;height:280px;background:#6366f1;top:10%;left:10%;}
+.circle2{width:320px;height:320px;background:#22d3ee;bottom:10%;right:10%;animation-delay:2s;}
+.circle3{width:200px;height:200px;background:#ec4899;bottom:20%;left:40%;animation-delay:4s;}
+
+@keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-25px);}
+}
+
+/* Container */
+.container{
+    width:92%;
+    max-width:520px;
+    padding:28px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,0.12);
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
+}
+
+/* Header */
+h1{
+    text-align:center;
+    font-size:1.8rem;
+    font-weight:700;
+}
+
+.subtitle{
+    text-align:center;
+    opacity:.7;
+    margin-top:6px;
+}
+
+/* Password Box */
+.password-box{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.password-box input{
+    flex:1;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:rgba(255,255,255,0.12);
+    color:#fff;
+    outline:none;
+}
+
+.password-box button{
+    padding:0 14px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    background:linear-gradient(135deg,#6366f1,#22d3ee);
+    color:#fff;
+    transition:.3s;
+}
+
+.password-box button:hover{
+    transform:scale(1.05);
+}
+
+/* Length */
+.length-section{
+    margin-top:18px;
+}
+
+.length-header{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:6px;
+}
+
+#lengthSlider{
+    width:100%;
+}
+
+/* Options */
+.options{
+    margin-top:18px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.options label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:14px;
+}
+
+/* Strength */
+.strength{
+    margin-top:18px;
+}
+
+.strength-bar{
+    height:8px;
+    background:rgba(255,255,255,0.15);
+    border-radius:50px;
+    overflow:hidden;
+    margin-top:6px;
+}
+
+#strengthIndicator{
+    height:100%;
+    width:30%;
+    background:#ef4444;
+    transition:.3s;
+}
+
+#strengthLabel{
+    margin-top:6px;
+    font-size:13px;
+    opacity:.8;
+}
+
+/* Button */
+#generateBtn{
+    width:100%;
+    margin-top:20px;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+    background:linear-gradient(135deg,#6366f1,#22d3ee);
+    color:#fff;
+    transition:.3s;
+}
+
+#generateBtn:hover{
+    transform:translateY(-2px);
+}
+
+/* Toast */
+#toast{
+    position:fixed;
+    top:20px;
+    right:20px;
+    background:#22c55e;
+    padding:12px 18px;
+    border-radius:10px;
+    opacity:0;
+    transition:.3s;
+}
+
+#toast.show{
+    opacity:1;
+    transform:translateY(10px);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    margin-top:18px;
+    font-size:13px;
+    opacity:.7;
+}
+
+/* Mobile */
+@media(max-width:600px){
+    .container{
+        padding:20px;
+    }
+    h1{
+        font-size:1.5rem;
+    }
+}
+/* ===== Eye Toggle Button ===== */
+
+.icon-btn{
+
+    width:58px;
+    height:58px;
+
+    border:none;
+    border-radius:12px;
+
+    background:rgba(255,255,255,.12);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    color:#ffffff;
+
+    transition:.3s;
+
+}
+
+.icon-btn:hover{
+
+    background:#00c6ff;
+
+    transform:translateY(-2px);
+
+}
+
+.icon-btn svg{
+
+    width:22px;
+    height:22px;
+
+    pointer-events:none;
+
+}
