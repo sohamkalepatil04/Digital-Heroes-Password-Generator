@@ -243,3 +243,30 @@ footer{
     pointer-events:none;
 
 }
+/* Digital Heroes Button */
+
+.dh-btn{
+    display:inline-block;
+    margin:20px 0;
+    padding:12px 24px;
+    background:#2563eb;
+    color:#ffffff;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.dh-btn:hover{
+    background:#1d4ed8;
+}
+.footer{
+    text-align:center;
+    margin-top:20px;
+    color:#ffffff;
+    font-size:16px;
+}
+
+.footer p{
+    margin:6px 0;
+}
